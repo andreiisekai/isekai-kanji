@@ -23,4 +23,5 @@ public class Kanji
     public List<string> Onyomi { get => onyomi; }
     public List<string> Kunyomi { get => kunyomi; }
     public List<string> Meaning { get => meaning; }
+
 }
