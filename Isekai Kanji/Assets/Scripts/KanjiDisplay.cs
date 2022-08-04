@@ -13,14 +13,14 @@ public class KanjiDisplay : MonoBehaviour
     private int typeIndex;
     private Kanji kanji;
     public Kanji Kanji { get => kanji; set => kanji = value; }
-    private string displayText;
+    private string hiddenText;
 
     private void Awake()
     {
         gameManager = FindObjectOfType<GameManager>();
         Kanji = kanjiGenerator.GetRandomKanji();
-        displayText = kanaParser.Parse(Kanji.Onyomi[0]);
-        SetText(displayText);
+        hiddenText = kanaParser.Parse(Kanji.Onyomi[0]);
+        SetText(Kanji.Symbol);
     }
     private void Start()
     {
@@ -43,19 +43,11 @@ public class KanjiDisplay : MonoBehaviour
         gameManager.RemoveKanjiFromList(this);
     }
 
-    public bool KanjiTyped()
-    {
-        bool kanjiTyped = (typeIndex >= displayText.Length);
-        if (kanjiTyped)
-        {
-            gameManager.RemoveKanjiFromList(this);
-        }
-        return kanjiTyped;
-    }
+    public bool KanjiTyped => typeIndex >= hiddenText.Length;
 
     public char GetNextLetter()
     {
-        string kanjiString = displayText;
+        string kanjiString = hiddenText;
         Debug.Log("Meaning = " + kanjiString + ", typeIndex = " + typeIndex);
         return kanjiString[typeIndex];
     }
@@ -68,7 +60,14 @@ public class KanjiDisplay : MonoBehaviour
 
     public void RemoveLetter()
     {
-        textMeshPro.text = textMeshPro.text.Remove(0, 1);
+        if (textMeshPro.text == Kanji.Symbol && KanjiTyped)
+        {
+            textMeshPro.text = textMeshPro.text.Remove(0, 1);
+        }
+        else if (textMeshPro.text != Kanji.Symbol)
+        {
+            textMeshPro.text = textMeshPro.text.Remove(0, 1);
+        }
         textMeshPro.color = Color.cyan;
     }
 

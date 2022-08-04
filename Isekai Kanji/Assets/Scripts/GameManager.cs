@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        if (hasActiveKanji && activeKanji.KanjiTyped())
+        if (hasActiveKanji && activeKanji.KanjiTyped)
         {
             hasActiveKanji = false;
             RemoveKanjiFromList(activeKanji);
