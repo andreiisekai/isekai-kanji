@@ -12,4 +12,212 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16017b92608433540b61fe214e708105, type: 3}
   m_Name: Katakana
   m_EditorClassIdentifier: 
-  kana: []
+  kana:
+  - symbol: "\u30A2"
+    romaji: a
+  - symbol: "\u30A4"
+    romaji: i
+  - symbol: "\u30A6"
+    romaji: u
+  - symbol: "\u30A8"
+    romaji: e
+  - symbol: "\u30AA"
+    romaji: o
+  - symbol: "\u30AB"
+    romaji: ka
+  - symbol: "\u30AD"
+    romaji: ki
+  - symbol: "\u30AF"
+    romaji: ku
+  - symbol: "\u30B1"
+    romaji: ke
+  - symbol: "\u30B3"
+    romaji: ko
+  - symbol: "\u30B5"
+    romaji: sa
+  - symbol: "\u30B7"
+    romaji: shi
+  - symbol: "\u30B9"
+    romaji: su
+  - symbol: "\u30BB"
+    romaji: se
+  - symbol: "\u30BD"
+    romaji: so
+  - symbol: "\u30BF"
+    romaji: ta
+  - symbol: "\u30C1"
+    romaji: chi
+  - symbol: "\u30C4"
+    romaji: tsu
+  - symbol: "\u30C4"
+    romaji: te
+  - symbol: "\u30C8"
+    romaji: to
+  - symbol: "\u30CA"
+    romaji: na
+  - symbol: "\u30CB"
+    romaji: ni
+  - symbol: "\u30CC"
+    romaji: nu
+  - symbol: "\u30CD"
+    romaji: ne
+  - symbol: "\u30CE"
+    romaji: no
+  - symbol: "\u30CF"
+    romaji: ha
+  - symbol: "\u30D2"
+    romaji: hi
+  - symbol: "\u30D5"
+    romaji: fu
+  - symbol: "\u30D8"
+    romaji: he
+  - symbol: "\u30DB"
+    romaji: ho
+  - symbol: "\u30DE"
+    romaji: ma
+  - symbol: "\u30DF"
+    romaji: mi
+  - symbol: "\u30E0"
+    romaji: mu
+  - symbol: "\u30E1"
+    romaji: me
+  - symbol: "\u30E2"
+    romaji: mo
+  - symbol: "\u30E4"
+    romaji: ya
+  - symbol: "\u30E6"
+    romaji: yu
+  - symbol: "\u30E8"
+    romaji: yo
+  - symbol: "\u30E9"
+    romaji: ra
+  - symbol: "\u30EA"
+    romaji: ri
+  - symbol: "\u30EB"
+    romaji: ru
+  - symbol: "\u30EC"
+    romaji: re
+  - symbol: "\u30ED"
+    romaji: ro
+  - symbol: "\u30EF"
+    romaji: wa
+  - symbol: "\u30F2"
+    romaji: wo
+  - symbol: "\u30F3"
+    romaji: "\uFF4E"
+  - symbol: "\u30AC"
+    romaji: ga
+  - symbol: "\u30AE"
+    romaji: gi
+  - symbol: "\u30B0"
+    romaji: gu
+  - symbol: "\u30B2"
+    romaji: ge
+  - symbol: "\u30B4"
+    romaji: go
+  - symbol: "\u30B6"
+    romaji: za
+  - symbol: "\u30B8"
+    romaji: ji
+  - symbol: "\u30BA"
+    romaji: zu
+  - symbol: "\u30BC"
+    romaji: ze
+  - symbol: "\u30BE"
+    romaji: zo
+  - symbol: "\u30C0"
+    romaji: da
+  - symbol: "\u30C2"
+    romaji: dji
+  - symbol: "\u30C5"
+    romaji: dzu
+  - symbol: "\u30C7"
+    romaji: de
+  - symbol: "\u30C9"
+    romaji: do
+  - symbol: "\u30D0"
+    romaji: ba
+  - symbol: "\u30D3"
+    romaji: bi
+  - symbol: "\u30D6"
+    romaji: bu
+  - symbol: "\u30D9"
+    romaji: be
+  - symbol: "\u30DC"
+    romaji: bo
+  - symbol: "\u30D1"
+    romaji: pa
+  - symbol: "\u30D4"
+    romaji: pi
+  - symbol: "\u30D7"
+    romaji: pu
+  - symbol: "\u30DA"
+    romaji: pe
+  - symbol: "\u30DD"
+    romaji: po
+  - symbol: "\u30AD\u30E3"
+    romaji: kya
+  - symbol: "\u30AD\u30E5"
+    romaji: kyu
+  - symbol: "\u30AD\u30E7"
+    romaji: kyo
+  - symbol: "\u30AE\u30E3"
+    romaji: gya
+  - symbol: "\u30AE\u30E5"
+    romaji: gyu
+  - symbol: "\u30AE\u30E7"
+    romaji: gyo
+  - symbol: "\u30B7\u30E3"
+    romaji: sha
+  - symbol: "\u30B7\u30E5"
+    romaji: shu
+  - symbol: "\u30B7\u30E7"
+    romaji: sho
+  - symbol: "\u30B8\u30E3"
+    romaji: ja
+  - symbol: "\u30B8\u30E5"
+    romaji: ju
+  - symbol: "\u30B8\u30E7"
+    romaji: jo
+  - symbol: "\u30C1\u30E3"
+    romaji: cha
+  - symbol: "\u30C1\u30E5"
+    romaji: chu
+  - symbol: "\u30C1\u30E7"
+    romaji: cho
+  - symbol: "\u30CB\u30E3"
+    romaji: nya
+  - symbol: "\u30CB\u30E5"
+    romaji: nyu
+  - symbol: "\u30CB\u30E7"
+    romaji: nyo
+  - symbol: "\u30D2\u30E3"
+    romaji: hya
+  - symbol: "\u30D2\u30E5"
+    romaji: hyu
+  - symbol: "\u30D2\u30E7"
+    romaji: hyo
+  - symbol: "\u30D3\u30E3"
+    romaji: bya
+  - symbol: "\u30D3\u30E5"
+    romaji: byu
+  - symbol: "\u30D3\u30E7"
+    romaji: byo
+  - symbol: "\u30DF\u30E3"
+    romaji: mya
+  - symbol: "\u30DF\u30E5"
+    romaji: myu
+  - symbol: "\u30DF\u30E7"
+    romaji: myo
+  - symbol: "\u30D4\u30E3"
+    romaji: pya
+  - symbol: "\u30D4\u30E5"
+    romaji: pyu
+  - symbol: "\u30D4\u30E7"
+    romaji: pyo
+  - symbol: "\u30EA\u30E3"
+    romaji: rya
+  - symbol: "\u30EA\u30E5"
+    romaji: ryu
+  - symbol: "\u30EA\u30E7"
+    romaji: ryo

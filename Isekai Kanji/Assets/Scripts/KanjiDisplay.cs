@@ -7,17 +7,20 @@ public class KanjiDisplay : MonoBehaviour
 {
     private GameManager gameManager;
     [SerializeField] private KanjiGenerator kanjiGenerator;
+    [SerializeField] private KanaParser kanaParser;
     [SerializeField] private TextMeshPro textMeshPro;
     [SerializeField] private float fallSpeed = 5.0f;
     private int typeIndex;
     private Kanji kanji;
     public Kanji Kanji { get => kanji; set => kanji = value; }
+    private string displayText;
 
     private void Awake()
     {
         gameManager = FindObjectOfType<GameManager>();
         Kanji = kanjiGenerator.GetRandomKanji();
-        SetText(Kanji.Meaning[0]);
+        displayText = kanaParser.Parse(Kanji.Onyomi[0]);
+        SetText(displayText);
     }
     private void Start()
     {
@@ -42,7 +45,7 @@ public class KanjiDisplay : MonoBehaviour
 
     public bool KanjiTyped()
     {
-        bool kanjiTyped = (typeIndex >= Kanji.Meaning[0].Length);
+        bool kanjiTyped = (typeIndex >= displayText.Length);
         if (kanjiTyped)
         {
             gameManager.RemoveKanjiFromList(this);
@@ -52,7 +55,7 @@ public class KanjiDisplay : MonoBehaviour
 
     public char GetNextLetter()
     {
-        string kanjiString = Kanji.Meaning[0];
+        string kanjiString = displayText;
         Debug.Log("Meaning = " + kanjiString + ", typeIndex = " + typeIndex);
         return kanjiString[typeIndex];
     }

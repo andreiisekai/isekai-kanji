@@ -47,6 +47,8 @@ MonoBehaviour:
     romaji: ta
   - symbol: "\u3061"
     romaji: chi
+  - symbol: "\u3064"
+    romaji: tsu
   - symbol: "\u3066"
     romaji: te
   - symbol: "\u3068"
@@ -175,8 +177,6 @@ MonoBehaviour:
     romaji: ja
   - symbol: "\u3058\u3085"
     romaji: ju
-  - symbol: "\u3058\u3087"
-    romaji: jo
   - symbol: "\u3058\u3087"
     romaji: jo
   - symbol: "\u3061\u3083"

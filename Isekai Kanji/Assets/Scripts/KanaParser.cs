@@ -1,18 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 using UnityEngine;
 
 public class KanaParser : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private KanaSystem hiragana;
+    [SerializeField] private KanaSystem katakana;
+
+    public string Parse(string kanas)
     {
-        
+        kanas = GetRomajiFromKana(kanas, hiragana);
+        kanas = GetRomajiFromKana(kanas, katakana);
+
+        return kanas;
     }
 
-    // Update is called once per frame
-    void Update()
+    private string GetRomajiFromKana(string kanas, KanaSystem kanaSystem)
     {
-        
+        foreach (var kana in kanaSystem.kana)
+        {
+            kanas = kanas.Replace(kana.Symbol, kana.Romaji);
+        }
+        return kanas;
     }
 }

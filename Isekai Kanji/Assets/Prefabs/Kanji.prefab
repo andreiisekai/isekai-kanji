@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2518625922764115241}
   - component: {fileID: 2518625922764115238}
   - component: {fileID: 1849394750710003270}
+  - component: {fileID: 6575111654443707329}
   - component: {fileID: 8292439389332671147}
   - component: {fileID: 1956134967078899941}
   m_Layer: 0
@@ -48,8 +49,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f1c1cf8e38f68b41a5bc7c2bb337003, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 0}
   kanjiGenerator: {fileID: 1849394750710003270}
+  kanaParser: {fileID: 6575111654443707329}
   textMeshPro: {fileID: 2518625922909200863}
   fallSpeed: 4
 --- !u!114 &1849394750710003270
@@ -65,6 +66,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jlpt1: {fileID: 11400000, guid: bea68f8cdee2dc04dace79e6402e4102, type: 2}
+--- !u!114 &6575111654443707329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2518625922764115240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eced661d60eb5f478459f4e0ebaf8c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hiragana: {fileID: 11400000, guid: 5b9b1b86e42b86c48acfe513cc22dc73, type: 2}
+  katakana: {fileID: 11400000, guid: 8ebb4f2fbbc289a40ab62cadf670a7f9, type: 2}
 --- !u!65 &8292439389332671147
 BoxCollider:
   m_ObjectHideFlags: 0
