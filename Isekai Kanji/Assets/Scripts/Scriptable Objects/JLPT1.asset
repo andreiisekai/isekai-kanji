@@ -30,7 +30,7 @@ MonoBehaviour:
     onyomi:
     - "\u30A4\u30C1"
     kunyomi:
-    - "\u3072\u3068\uFF08\u3064\uFF09"
+    - "\u3072\u3068(\u3064)"
     meaning:
     - one
   - symbol: "\u56FD"
@@ -40,3 +40,175 @@ MonoBehaviour:
     - "\u304F\u306B"
     meaning:
     - country
+  - symbol: "\u4EBA"
+    onyomi:
+    - "\u30B8\u30F3"
+    - "\u30CB\u30F3"
+    kunyomi:
+    - "\u3072\u3068"
+    meaning:
+    - person
+  - symbol: "\u5E74"
+    onyomi:
+    - "\u30CD\u30F3"
+    kunyomi:
+    - "\u3068\u3057"
+    meaning:
+    - year
+    - counter for years
+  - symbol: "\u5927"
+    onyomi:
+    - "\u30C0\u30A4"
+    - "\u30BF\u30A4"
+    kunyomi:
+    - "\u304A\u304A(\u304D\u3044)"
+    meaning:
+    - big
+    - large
+  - symbol: "\u5341"
+    onyomi:
+    - "\u30B8\u30E5\u30A6"
+    kunyomi:
+    - "\u3068\u304A"
+    - "\u3068"
+    meaning:
+    - ten
+    - 10
+  - symbol: "\u30CB"
+    onyomi:
+    - "\u30CB"
+    - "\u30B8"
+    kunyomi:
+    - "\u3075\u305F(\u3064)"
+    meaning:
+    - two
+    - 2
+  - symbol: "\u672C"
+    onyomi:
+    - "\u30DB\u30F3"
+    kunyomi:
+    - "\u3082\u3068"
+    meaning:
+    - book
+    - present
+    - true
+    - counter for long cylindrical things
+  - symbol: "\u4E2D"
+    onyomi:
+    - "\u30C1\u30E5\u30A6"
+    kunyomi:
+    - "\u306A\u304B"
+    - "\u3046\u3061"
+    - "\u3042\u305F(\u308B)"
+    meaning:
+    - in
+    - inside
+    - middle
+    - mean
+    - center
+  - symbol: "\u9577"
+    onyomi:
+    - "\u30C1\u30E7\u30A6"
+    kunyomi:
+    - "\u306A\u304C(\u3044)"
+    - "\u304A\u3055"
+    meaning:
+    - long
+    - leader
+    - superior
+    - senior
+  - symbol: "\u51FA"
+    onyomi:
+    - "\u30B7\u30E5\u30C4"
+    - "\u30B9\u30A4"
+    kunyomi:
+    - "\u3067(\u308B)"
+    - "\u3060(\u3059)"
+    - "\u3044(\u3067\u308B)"
+    meaning:
+    - exit
+    - leave
+    - go out
+  - symbol: "\u4E09"
+    onyomi:
+    - "\u30B5\u30F3"
+    kunyomi:
+    - "\u307F(\u3064)"
+    meaning:
+    - three
+    - 3
+  - symbol: "\u6642"
+    onyomi:
+    - "\u30B8"
+    kunyomi:
+    - "\u3068\u304D"
+    - "-\u3069\u304D"
+    meaning:
+    - time
+    - hour
+  - symbol: "\u884C"
+    onyomi:
+    - "\u30B3\u30A6"
+    - "\u30AE\u30E7\u30A6"
+    - "\u30A2\u30F3"
+    kunyomi:
+    - "\u3044(\u304F)"
+    - "\u3086(\u304F)"
+    - "\u304A\u3053\u306A(\u3046)"
+    meaning:
+    - going
+    - journey
+  - symbol: "\u898B"
+    onyomi:
+    - "\u30B1\u30F3"
+    kunyomi:
+    - "\u307F(\u308B)"
+    - "\u307F(\u305B\u308B)"
+    meaning:
+    - see
+    - hopes
+    - chances
+    - idea
+    - opinion
+    - look at
+    - visible
+  - symbol: "\u6708"
+    onyomi:
+    - "\u30B2\u30C4"
+    - "\u30AC\u30C4"
+    kunyomi:
+    - "\u3064\u304D"
+    meaning:
+    - month
+    - moon
+  - symbol: "\u5206"
+    onyomi:
+    - "\u30D6\u30F3"
+    - "\u30D5\u30F3"
+    - "\u30D6"
+    kunyomi:
+    - "\u308F(\u3051\u308B)"
+    meaning:
+    - part
+    - minute of time
+    - understand
+  - symbol: "\u5F8C"
+    onyomi:
+    - "\u30B4"
+    - "\u30B3\u30A6"
+    kunyomi:
+    - "\u306E\u3061"
+    - "\u3046\u3057(\u308D)"
+    - "\u3042\u3068"
+    meaning:
+    - behind
+    - back
+    - later
+  - symbol: "\u524D"
+    onyomi:
+    - "\u30BC\u30F3"
+    kunyomi:
+    - "\u307E\u3048"
+    meaning:
+    - in front
+    - before

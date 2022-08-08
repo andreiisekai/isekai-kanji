@@ -13,6 +13,72 @@ MonoBehaviour:
   m_Name: Hiragana
   m_EditorClassIdentifier: 
   kana:
+ - symbol: "\u304D\u3083"
+    romaji: kya
+  - symbol: "\u304D\u3085"
+    romaji: kyu
+  - symbol: "\u304D\u3087"
+    romaji: kyo
+  - symbol: "\u304E\u3083"
+    romaji: gya
+  - symbol: "\u304E\u3085"
+    romaji: gyu
+  - symbol: "\u304E\u3087"
+    romaji: gyo
+  - symbol: "\u3057\u3083"
+    romaji: sha
+  - symbol: "\u3057\u3085"
+    romaji: shu
+  - symbol: "\u3057\u3087"
+    romaji: sho
+  - symbol: "\u3058\u3083"
+    romaji: ja
+  - symbol: "\u3058\u3085"
+    romaji: ju
+  - symbol: "\u3058\u3087"
+    romaji: jo
+  - symbol: "\u3061\u3083"
+    romaji: cha
+  - symbol: "\u3061\u3085"
+    romaji: chu
+  - symbol: "\u3061\u3087"
+    romaji: cho
+  - symbol: "\u306B\u3083"
+    romaji: nya
+  - symbol: "\u306B\u3085"
+    romaji: nyu
+  - symbol: "\u306B\u3087"
+    romaji: nyo
+  - symbol: "\u3072\u3083"
+    romaji: hya
+  - symbol: "\u3072\u3085"
+    romaji: hyu
+  - symbol: "\u3072\u3087"
+    romaji: hyo
+  - symbol: "\u3073\u3083"
+    romaji: bya
+  - symbol: "\u3073\u3085"
+    romaji: byu
+  - symbol: "\u3073\u3087"
+    romaji: byo
+  - symbol: "\u307F\u3083"
+    romaji: mya
+  - symbol: "\u307F\u3085"
+    romaji: myu
+  - symbol: "\u307F\u3087"
+    romaji: myo
+  - symbol: "\u3074\u3083"
+    romaji: pya
+  - symbol: "\u3074\u3085"
+    romaji: pyu
+  - symbol: "\u3074\u3087"
+    romaji: pyo
+  - symbol: "\u308A\u3083"
+    romaji: rya
+  - symbol: "\u308A\u3085"
+    romaji: ryu
+  - symbol: "\u308A\u3087"
+    romaji: ryo
   - symbol: "\u3042"
     romaji: a
   - symbol: "\u3044"
@@ -104,7 +170,7 @@ MonoBehaviour:
   - symbol: "\u3092"
     romaji: wo
   - symbol: "\u3093"
-    romaji: "\uFF4E"
+    romaji: n
   - symbol: "\u304C"
     romaji: ga
   - symbol: "\u304E"
@@ -155,69 +221,4 @@ MonoBehaviour:
     romaji: pe
   - symbol: "\u307D"
     romaji: po
-  - symbol: "\u304D\u3083"
-    romaji: kya
-  - symbol: "\u304D\u3085"
-    romaji: kyu
-  - symbol: "\u304D\u3087"
-    romaji: kyo
-  - symbol: "\u304E\u3083"
-    romaji: gya
-  - symbol: "\u304E\u3085"
-    romaji: gyu
-  - symbol: "\u304E\u3087"
-    romaji: gyo
-  - symbol: "\u3057\u3083"
-    romaji: sha
-  - symbol: "\u3057\u3085"
-    romaji: shu
-  - symbol: "\u3057\u3087"
-    romaji: sho
-  - symbol: "\u3058\u3083"
-    romaji: ja
-  - symbol: "\u3058\u3085"
-    romaji: ju
-  - symbol: "\u3058\u3087"
-    romaji: jo
-  - symbol: "\u3061\u3083"
-    romaji: cha
-  - symbol: "\u3061\u3085"
-    romaji: chu
-  - symbol: "\u3061\u3087"
-    romaji: cho
-  - symbol: "\u306B\u3083"
-    romaji: nya
-  - symbol: "\u306B\u3085"
-    romaji: nyu
-  - symbol: "\u306B\u3087"
-    romaji: nyo
-  - symbol: "\u3072\u3083"
-    romaji: hya
-  - symbol: "\u3072\u3085"
-    romaji: hyu
-  - symbol: "\u3072\u3087"
-    romaji: hyo
-  - symbol: "\u3073\u3083"
-    romaji: bya
-  - symbol: "\u3073\u3085"
-    romaji: byu
-  - symbol: "\u3073\u3087"
-    romaji: byo
-  - symbol: "\u307F\u3083"
-    romaji: mya
-  - symbol: "\u307F\u3085"
-    romaji: myu
-  - symbol: "\u307F\u3087"
-    romaji: myo
-  - symbol: "\u3074\u3083"
-    romaji: pya
-  - symbol: "\u3074\u3085"
-    romaji: pyu
-  - symbol: "\u3074\u3087"
-    romaji: pyo
-  - symbol: "\u308A\u3083"
-    romaji: rya
-  - symbol: "\u308A\u3085"
-    romaji: ryu
-  - symbol: "\u308A\u3087"
-    romaji: ryo
+ 

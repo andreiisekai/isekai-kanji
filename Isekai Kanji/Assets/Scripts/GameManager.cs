@@ -8,18 +8,25 @@ public class GameManager : MonoBehaviour
     public List<KanjiDisplay> displayedKanjis;
     private bool hasActiveKanji;
     private KanjiDisplay activeKanji;
+    [SerializeField] ScoreManager scoreManager;
 
     public void AddKanji()
     {
         KanjiDisplay display = kanjiSpawner.SpawnKanjiDisplay();
-        Debug.Log(display.Kanji.Meaning[0]);
         displayedKanjis.Add(display);
     }
 
     public void RemoveKanjiFromList(KanjiDisplay display)
     {
+        hasActiveKanji = false;
         Destroy(display.gameObject);
         displayedKanjis.Remove(display);
+    }
+
+    public void RemoveKanjiAndLives(KanjiDisplay display)
+    {
+        RemoveKanjiFromList(display);
+        scoreManager.RemoveLives();
     }
 
     public void TypeLetter(char letter)
@@ -47,8 +54,8 @@ public class GameManager : MonoBehaviour
 
         if (hasActiveKanji && activeKanji.KanjiTyped)
         {
-            hasActiveKanji = false;
             RemoveKanjiFromList(activeKanji);
+            scoreManager.AddToScore();
         }
     }
 }

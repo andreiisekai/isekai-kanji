@@ -8,19 +8,21 @@ public class KanjiDisplay : MonoBehaviour
     private GameManager gameManager;
     [SerializeField] private KanjiGenerator kanjiGenerator;
     [SerializeField] private KanaParser kanaParser;
-    [SerializeField] private TextMeshPro textMeshPro;
+    [SerializeField] private TextMeshPro symbol;
+    [SerializeField] private TextMeshPro reading;
     [SerializeField] private float fallSpeed = 5.0f;
     private int typeIndex;
     private Kanji kanji;
     public Kanji Kanji { get => kanji; set => kanji = value; }
-    private string hiddenText;
+    private string hintText;
 
     private void Awake()
     {
         gameManager = FindObjectOfType<GameManager>();
         Kanji = kanjiGenerator.GetRandomKanji();
-        hiddenText = kanaParser.Parse(Kanji.Onyomi[0]);
-        SetText(Kanji.Symbol);
+        hintText = kanaParser.Parse(Kanji.Onyomi[0]);
+        Debug.Log(Kanji.Onyomi[0]+" = "+ hintText);
+        SetText(Kanji.Symbol, hintText);
     }
     private void Start()
     {
@@ -32,22 +34,23 @@ public class KanjiDisplay : MonoBehaviour
         transform.Translate(0f, -fallSpeed * Time.deltaTime, 0f);
     }
 
-    public void SetText(string word)
+    public void SetText(string kanjiSymbol, string kanjiReading)
     {
-        textMeshPro.text = word;
+        symbol.text = kanjiSymbol;
+        reading.text = kanjiReading;
     }
 
 
     private void OnTriggerEnter(Collider other)
     {
-        gameManager.RemoveKanjiFromList(this);
+        gameManager.RemoveKanjiAndLives(this);
     }
 
-    public bool KanjiTyped => typeIndex >= hiddenText.Length;
+    public bool KanjiTyped => typeIndex >= hintText.Length;
 
     public char GetNextLetter()
     {
-        string kanjiString = hiddenText;
+        string kanjiString = hintText;
         Debug.Log("Meaning = " + kanjiString + ", typeIndex = " + typeIndex);
         return kanjiString[typeIndex];
     }
@@ -60,15 +63,19 @@ public class KanjiDisplay : MonoBehaviour
 
     public void RemoveLetter()
     {
-        if (textMeshPro.text == Kanji.Symbol && KanjiTyped)
+        if (symbol.text == Kanji.Symbol && KanjiTyped)
         {
-            textMeshPro.text = textMeshPro.text.Remove(0, 1);
+            symbol.text = symbol.text.Remove(0, 1);
         }
-        else if (textMeshPro.text != Kanji.Symbol)
+        else if (symbol.text != Kanji.Symbol)
         {
-            textMeshPro.text = textMeshPro.text.Remove(0, 1);
+            symbol.text = symbol.text.Remove(0, 1);
+        }else
+        {
+            reading.text = reading.text.Remove(0, 1);
         }
-        textMeshPro.color = Color.cyan;
+        symbol.color = Color.cyan;
+        reading.color = Color.cyan;
     }
 
 }

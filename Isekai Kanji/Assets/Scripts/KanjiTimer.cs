@@ -7,6 +7,7 @@ public class KanjiTimer : MonoBehaviour
     public GameManager gameManager;
     public float delay = 1.5f;
     private float nextKanjiTime = 0f;
+    public bool challengeMode;
 
     void Update()
     {
@@ -14,7 +15,10 @@ public class KanjiTimer : MonoBehaviour
         {
             gameManager.AddKanji();
             nextKanjiTime = Time.time + delay;
-            delay *= .99f;
+            if (challengeMode)
+            {
+                delay *= .99f;
+            }
         }
     }
 }
