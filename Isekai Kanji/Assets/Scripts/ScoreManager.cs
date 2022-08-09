@@ -7,6 +7,7 @@ public class ScoreManager : MonoBehaviour
 {
     [SerializeField] int score = 0, lives = 5, kanjiScore = 10;
     [SerializeField] TextMeshProUGUI scoreTMP, livesTMP;
+    [SerializeField] SceneLoader sceneLoader;
 
     public int Lives { get => lives; private set => lives = value; }
 
@@ -19,8 +20,11 @@ public class ScoreManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        scoreTMP.text = score.ToString();
-        livesTMP.text = lives.ToString();
+        UpdateStats();
+        if (Lives == 0)
+        {
+            sceneLoader.LoadGameOver();
+        }
     }
 
     public void AddToScore()
@@ -31,5 +35,11 @@ public class ScoreManager : MonoBehaviour
     public void RemoveLives()
     {
         Lives--;
+    }
+
+    void UpdateStats()
+    {
+        scoreTMP.text = score.ToString();
+        livesTMP.text = lives.ToString();
     }
 }
