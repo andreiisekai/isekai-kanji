@@ -595,7 +595,7 @@ MonoBehaviour:
   kanjiScore: 10
   scoreTMP: {fileID: 927262613654145108}
   livesTMP: {fileID: 927262613393767206}
-  sceneLoader: {fileID: 0}
+  sceneLoader: {fileID: 1434811877311773740, guid: b4fa4d2a76ecd9d468dc6f9da649bc55, type: 3}
 --- !u!1001 &927262613381307820
 PrefabInstance:
   m_ObjectHideFlags: 0

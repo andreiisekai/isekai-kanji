@@ -9,6 +9,7 @@ public class UIHandler : MonoBehaviour
     private GameObject mainMenu, options, hiragana, katakana, jlptn5;
     string activeSceneName;
 
+
     void Awake()
     {
         activeSceneName = SceneManager.GetActiveScene().name;
@@ -55,6 +56,7 @@ public class UIHandler : MonoBehaviour
 
             }
         }
+
     }
 
     public void StartGame()
