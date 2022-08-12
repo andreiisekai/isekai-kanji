@@ -19,6 +19,15 @@ public class Kanji
     [SerializeField]
     private List<string> meaning;
 
+    public Kanji (Kana kana)
+    {
+        symbol = kana.Symbol;
+        onyomi = new List<string>
+        {
+            kana.Symbol
+        };
+    }
+
     public string Symbol { get => symbol; }
     public List<string> Onyomi { get => onyomi; }
     public List<string> Kunyomi { get => kunyomi; }

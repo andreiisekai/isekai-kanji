@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 363df9b0a516ae64184cfbe5aa1a9359, type: 3}
   m_Name: KanjiSettings
   m_EditorClassIdentifier: 
-  jlptn5Toggle: 1
-  hiraganaToggle: 0
+  jlptn5Toggle: 0
+  hiraganaToggle: 1
   katakanaToggle: 0
-  romajiToggle: 1
+  romajiToggle: 0

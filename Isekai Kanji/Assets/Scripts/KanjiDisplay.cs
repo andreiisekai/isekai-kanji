@@ -7,6 +7,7 @@ public class KanjiDisplay : MonoBehaviour
 {
     private GameManager gameManager;
     [SerializeField] private KanjiGenerator kanjiGenerator;
+    [SerializeField] private KanjiSettings settings;
     [SerializeField] private KanaParser kanaParser;
     [SerializeField] private TextMeshPro symbol;
     [SerializeField] private TextMeshPro reading;
@@ -19,7 +20,7 @@ public class KanjiDisplay : MonoBehaviour
     private void Awake()
     {
         gameManager = FindObjectOfType<GameManager>();
-        Kanji = kanjiGenerator.GetRandomKanji();
+        Kanji = kanjiGenerator.GetRandomKanji(settings);
         hintText = kanaParser.Parse(Kanji.Onyomi[0]);
         Debug.Log(Kanji.Onyomi[0]+" = "+ hintText);
         SetText(Kanji.Symbol, hintText);
@@ -37,7 +38,14 @@ public class KanjiDisplay : MonoBehaviour
     public void SetText(string kanjiSymbol, string kanjiReading)
     {
         symbol.text = kanjiSymbol;
-        reading.text = kanjiReading;
+        if (settings.RomajiToggle)
+        {
+            reading.text = kanjiReading;
+        }
+        else
+        {
+            reading.text = "";
+        }
     }
 
 
@@ -67,7 +75,7 @@ public class KanjiDisplay : MonoBehaviour
         {
             symbol.text = symbol.text.Remove(0, 1);
         }
-        else if (symbol.text != Kanji.Symbol)
+        else if (symbol.text != Kanji.Symbol && !settings.RomajiToggle)
         {
             symbol.text = symbol.text.Remove(0, 1);
         }else
