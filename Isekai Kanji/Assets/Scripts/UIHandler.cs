@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class UIHandler : MonoBehaviour
 {
     [SerializeField] SceneLoader sceneLoader;
-    private GameObject mainMenu, options, hiragana, katakana, jlptn5;
+    private GameObject mainMenu, options, helpCanvas;
     string activeSceneName;
 
 
@@ -19,11 +19,18 @@ public class UIHandler : MonoBehaviour
     {
         mainMenu = GameObject.Find("MainMenuCanvas");
         options = GameObject.Find("OptionsCanvas");
+        helpCanvas = GameObject.Find("HelpCanvas");
         Debug.Log("mainMenu = " + mainMenu);
         Debug.Log("options = " + options);
+        Debug.Log("helpCanvas = " + helpCanvas);
         if (options != null)
         {
             options.SetActive(false);
+        }
+
+        if (helpCanvas != null)
+        {
+            helpCanvas.SetActive(false);
         }
     }
 
@@ -41,9 +48,14 @@ public class UIHandler : MonoBehaviour
                     LoadMainMenu();
                     break;
                 case "MainMenu":
-                    if (options.activeSelf == true)
+                    if (options.activeSelf == true && helpCanvas.activeSelf == false)
                     {
                         ShowMainMenu();
+                    }
+                    else if (options.activeSelf == false && helpCanvas.activeSelf == true)
+                    {
+                        helpCanvas.SetActive(false);
+                        ShowOptions();
                     }
                     else
                     {
@@ -85,9 +97,10 @@ public class UIHandler : MonoBehaviour
         mainMenu.SetActive(true);
     }
 
-    public void JLPTN5Help()
+    public void ShowHelpCanvas()
     {
-
+        options.SetActive(false);
+        helpCanvas.SetActive(true);
     }
 
 }

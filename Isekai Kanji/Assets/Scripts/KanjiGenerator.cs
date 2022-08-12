@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class KanjiGenerator : MonoBehaviour
 {
-    [SerializeField] private JLPT jlpt1;
+    [SerializeField] private JLPT jlptn5;
     [SerializeField] private KanaSystem hiragana, katakana;
     public Kanji GetRandomKanji(KanjiSettings settings)
     {
@@ -12,8 +12,8 @@ public class KanjiGenerator : MonoBehaviour
         
         if (settings.Jlpnt5Toggle) 
         { 
-            int randomIndex = Random.Range(0, jlpt1.kanji.Length);
-            randKanjiList.Add(jlpt1.kanji[randomIndex]);
+            int randomIndex = Random.Range(0, jlptn5.kanji.Length);
+            randKanjiList.Add(jlptn5.kanji[randomIndex]);
         }
 
         if (settings.HiraganaToggle)

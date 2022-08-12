@@ -68,7 +68,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c755b93c602274c4f93b85398704e6a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jlpt1: {fileID: 11400000, guid: bea68f8cdee2dc04dace79e6402e4102, type: 2}
+  jlptn5: {fileID: 11400000, guid: bea68f8cdee2dc04dace79e6402e4102, type: 2}
   hiragana: {fileID: 11400000, guid: 5b9b1b86e42b86c48acfe513cc22dc73, type: 2}
   katakana: {fileID: 11400000, guid: 8ebb4f2fbbc289a40ab62cadf670a7f9, type: 2}
 --- !u!114 &6575111654443707329
