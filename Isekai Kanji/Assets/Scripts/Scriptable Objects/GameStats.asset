@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 363df9b0a516ae64184cfbe5aa1a9359, type: 3}
-  m_Name: KanjiSettings
+  m_Script: {fileID: 11500000, guid: 6cad992bbb5313b4a885a8ce25b1517d, type: 3}
+  m_Name: GameStats
   m_EditorClassIdentifier: 
-  jlptn5Toggle: 1
-  hiraganaToggle: 0
-  katakanaToggle: 0
-  romajiToggle: 1
+  Score: 0
+  Lives: 5
+  KanjiScore: 10

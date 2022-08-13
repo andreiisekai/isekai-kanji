@@ -5,23 +5,24 @@ using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
 {
-    [SerializeField] int score = 0, lives = 5, kanjiScore = 10;
+    [SerializeField] GameStats stats;
+    private int lives = 1, kanjiScore = 1;
     [SerializeField] TextMeshProUGUI scoreTMP, livesTMP;
     [SerializeField] SceneLoader sceneLoader;
-
-    public int Lives { get => lives; private set => lives = value; }
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        stats.Score = 0;
+        lives = stats.Lives;
+        kanjiScore = stats.KanjiScore;
     }
 
     // Update is called once per frame
     void Update()
     {
         UpdateStats();
-        if (Lives == 0)
+        if (lives == 0)
         {
             sceneLoader.LoadGameOver();
         }
@@ -29,17 +30,17 @@ public class ScoreManager : MonoBehaviour
 
     public void AddToScore()
     {
-        score += kanjiScore;
+        stats.Score += kanjiScore;
     }
 
     public void RemoveLives()
     {
-        Lives--;
+        lives--;
     }
 
     void UpdateStats()
     {
-        scoreTMP.text = score.ToString();
+        scoreTMP.text = stats.Score.ToString();
         livesTMP.text = lives.ToString();
     }
 }

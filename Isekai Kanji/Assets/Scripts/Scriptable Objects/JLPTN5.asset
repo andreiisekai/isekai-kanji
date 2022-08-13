@@ -13,6 +13,39 @@ MonoBehaviour:
   m_Name: JLPTN5
   m_EditorClassIdentifier: 
   kanji:
+  - symbol: "\u4E00"
+    onyomi:
+    - "\u30A4\u30C1"
+    kunyomi:
+    - "\u3072\u3068(\u3064)"
+    meaning:
+    - one
+  - symbol: "\u30CB"
+    onyomi:
+    - "\u30CB"
+    - "\u30B8"
+    kunyomi:
+    - "\u3075\u305F(\u3064)"
+    meaning:
+    - two
+    - 2
+  - symbol: "\u4E09"
+    onyomi:
+    - "\u30B5\u30F3"
+    kunyomi:
+    - "\u307F(\u3064)"
+    meaning:
+    - three
+    - 3
+  - symbol: "\u5341"
+    onyomi:
+    - "\u30B8\u30E5\u30A6"
+    kunyomi:
+    - "\u3068\u304A"
+    - "\u3068"
+    meaning:
+    - ten
+    - 10
   - symbol: "\u65E5"
     onyomi:
     - "\u30CB\u30C1"
@@ -26,13 +59,6 @@ MonoBehaviour:
     - sun
     - Japan
     - counter for days
-  - symbol: "\u4E00"
-    onyomi:
-    - "\u30A4\u30C1"
-    kunyomi:
-    - "\u3072\u3068(\u3064)"
-    meaning:
-    - one
   - symbol: "\u56FD"
     onyomi:
     - "\u30B3\u30AF"
@@ -65,24 +91,6 @@ MonoBehaviour:
     meaning:
     - big
     - large
-  - symbol: "\u5341"
-    onyomi:
-    - "\u30B8\u30E5\u30A6"
-    kunyomi:
-    - "\u3068\u304A"
-    - "\u3068"
-    meaning:
-    - ten
-    - 10
-  - symbol: "\u30CB"
-    onyomi:
-    - "\u30CB"
-    - "\u30B8"
-    kunyomi:
-    - "\u3075\u305F(\u3064)"
-    meaning:
-    - two
-    - 2
   - symbol: "\u672C"
     onyomi:
     - "\u30DB\u30F3"
@@ -129,14 +137,6 @@ MonoBehaviour:
     - exit
     - leave
     - go out
-  - symbol: "\u4E09"
-    onyomi:
-    - "\u30B5\u30F3"
-    kunyomi:
-    - "\u307F(\u3064)"
-    meaning:
-    - three
-    - 3
   - symbol: "\u6642"
     onyomi:
     - "\u30B8"

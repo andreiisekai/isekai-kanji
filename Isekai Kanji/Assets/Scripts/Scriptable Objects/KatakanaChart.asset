@@ -10,75 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 16017b92608433540b61fe214e708105, type: 3}
-  m_Name: Katakana
+  m_Name: KatakanaChart
   m_EditorClassIdentifier: 
   kana:
-  - symbol: "\u30AD\u30E3"
-    romaji: kya
-  - symbol: "\u30AD\u30E5"
-    romaji: kyu
-  - symbol: "\u30AD\u30E7"
-    romaji: kyo
-  - symbol: "\u30AE\u30E3"
-    romaji: gya
-  - symbol: "\u30AE\u30E5"
-    romaji: gyu
-  - symbol: "\u30AE\u30E7"
-    romaji: gyo
-  - symbol: "\u30B7\u30E3"
-    romaji: sha
-  - symbol: "\u30B7\u30E5"
-    romaji: shu
-  - symbol: "\u30B7\u30E7"
-    romaji: sho
-  - symbol: "\u30B8\u30E3"
-    romaji: ja
-  - symbol: "\u30B8\u30E5"
-    romaji: ju
-  - symbol: "\u30B8\u30E7"
-    romaji: jo
-  - symbol: "\u30C1\u30E3"
-    romaji: cha
-  - symbol: "\u30C1\u30E5"
-    romaji: chu
-  - symbol: "\u30C1\u30E7"
-    romaji: cho
-  - symbol: "\u30CB\u30E3"
-    romaji: nya
-  - symbol: "\u30CB\u30E5"
-    romaji: nyu
-  - symbol: "\u30CB\u30E7"
-    romaji: nyo
-  - symbol: "\u30D2\u30E3"
-    romaji: hya
-  - symbol: "\u30D2\u30E5"
-    romaji: hyu
-  - symbol: "\u30D2\u30E7"
-    romaji: hyo
-  - symbol: "\u30D3\u30E3"
-    romaji: bya
-  - symbol: "\u30D3\u30E5"
-    romaji: byu
-  - symbol: "\u30D3\u30E7"
-    romaji: byo
-  - symbol: "\u30DF\u30E3"
-    romaji: mya
-  - symbol: "\u30DF\u30E5"
-    romaji: myu
-  - symbol: "\u30DF\u30E7"
-    romaji: myo
-  - symbol: "\u30D4\u30E3"
-    romaji: pya
-  - symbol: "\u30D4\u30E5"
-    romaji: pyu
-  - symbol: "\u30D4\u30E7"
-    romaji: pyo
-  - symbol: "\u30EA\u30E3"
-    romaji: rya
-  - symbol: "\u30EA\u30E5"
-    romaji: ryu
-  - symbol: "\u30EA\u30E7"
-    romaji: ryo
   - symbol: "\u30A2"
     romaji: a
   - symbol: "\u30A4"
@@ -221,3 +155,69 @@ MonoBehaviour:
     romaji: pe
   - symbol: "\u30DD"
     romaji: po
+  - symbol: "\u30AD\u30E3"
+    romaji: kya
+  - symbol: "\u30AD\u30E5"
+    romaji: kyu
+  - symbol: "\u30AD\u30E7"
+    romaji: kyo
+  - symbol: "\u30AE\u30E3"
+    romaji: gya
+  - symbol: "\u30AE\u30E5"
+    romaji: gyu
+  - symbol: "\u30AE\u30E7"
+    romaji: gyo
+  - symbol: "\u30B7\u30E3"
+    romaji: sha
+  - symbol: "\u30B7\u30E5"
+    romaji: shu
+  - symbol: "\u30B7\u30E7"
+    romaji: sho
+  - symbol: "\u30B8\u30E3"
+    romaji: ja
+  - symbol: "\u30B8\u30E5"
+    romaji: ju
+  - symbol: "\u30B8\u30E7"
+    romaji: jo
+  - symbol: "\u30C1\u30E3"
+    romaji: cha
+  - symbol: "\u30C1\u30E5"
+    romaji: chu
+  - symbol: "\u30C1\u30E7"
+    romaji: cho
+  - symbol: "\u30CB\u30E3"
+    romaji: nya
+  - symbol: "\u30CB\u30E5"
+    romaji: nyu
+  - symbol: "\u30CB\u30E7"
+    romaji: nyo
+  - symbol: "\u30D2\u30E3"
+    romaji: hya
+  - symbol: "\u30D2\u30E5"
+    romaji: hyu
+  - symbol: "\u30D2\u30E7"
+    romaji: hyo
+  - symbol: "\u30D3\u30E3"
+    romaji: bya
+  - symbol: "\u30D3\u30E5"
+    romaji: byu
+  - symbol: "\u30D3\u30E7"
+    romaji: byo
+  - symbol: "\u30DF\u30E3"
+    romaji: mya
+  - symbol: "\u30DF\u30E5"
+    romaji: myu
+  - symbol: "\u30DF\u30E7"
+    romaji: myo
+  - symbol: "\u30D4\u30E3"
+    romaji: pya
+  - symbol: "\u30D4\u30E5"
+    romaji: pyu
+  - symbol: "\u30D4\u30E7"
+    romaji: pyo
+  - symbol: "\u30EA\u30E3"
+    romaji: rya
+  - symbol: "\u30EA\u30E5"
+    romaji: ryu
+  - symbol: "\u30EA\u30E7"
+    romaji: ryo
