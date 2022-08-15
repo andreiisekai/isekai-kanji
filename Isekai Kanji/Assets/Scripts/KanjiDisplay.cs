@@ -78,12 +78,15 @@ public class KanjiDisplay : MonoBehaviour
         else if (symbol.text != Kanji.Symbol && !settings.RomajiToggle)
         {
             symbol.text = symbol.text.Remove(0, 1);
-        }else
+        }
+
+        if (reading.text != "")
         {
             reading.text = reading.text.Remove(0, 1);
         }
-        symbol.color = Color.cyan;
-        reading.color = Color.cyan;
+
+        symbol.color = Color.red;
+        reading.color = Color.red;
     }
 
 }
