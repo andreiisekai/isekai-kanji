@@ -10,11 +10,13 @@ public class ScoreManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI scoreTMP, livesTMP;
     [SerializeField] SceneLoader sceneLoader;
 
+    public int Lives { get => lives; private set => lives = value; }
+
     // Start is called before the first frame update
     void Start()
     {
         stats.Score = 0;
-        lives = stats.Lives;
+        Lives = stats.Lives;
         kanjiScore = stats.KanjiScore;
     }
 
@@ -22,7 +24,7 @@ public class ScoreManager : MonoBehaviour
     void Update()
     {
         UpdateStats();
-        if (lives == 0)
+        if (Lives == 0)
         {
             sceneLoader.LoadGameOver();
         }
@@ -35,12 +37,12 @@ public class ScoreManager : MonoBehaviour
 
     public void RemoveLives()
     {
-        lives--;
+        Lives--;
     }
 
     void UpdateStats()
     {
         scoreTMP.text = stats.Score.ToString();
-        livesTMP.text = lives.ToString();
+        livesTMP.text = Lives.ToString();
     }
 }

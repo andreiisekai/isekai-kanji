@@ -16,3 +16,5 @@ MonoBehaviour:
   hiraganaToggle: 0
   katakanaToggle: 0
   romajiToggle: 1
+  challengeModeToggle: 0
+  volume: 0.3

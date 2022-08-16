@@ -6,8 +6,9 @@ using UnityEngine.UI;
 public class OptionsHandler : MonoBehaviour
 {
     [SerializeField] KanjiSettings settings;
-    [SerializeField] Toggle jlptn5Toggle, hiraganaToggle, katakanaToggle, romajiToggle;
+    [SerializeField] Toggle jlptn5Toggle, hiraganaToggle, katakanaToggle, romajiToggle, challengeModeToggle;
     [SerializeField] Button start;
+    [SerializeField] Scrollbar volumeSlider;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +16,8 @@ public class OptionsHandler : MonoBehaviour
         hiraganaToggle.isOn = settings.HiraganaToggle;
         katakanaToggle.isOn = settings.KatakanaToggle;
         romajiToggle.isOn = settings.RomajiToggle;
+        challengeModeToggle.isOn = settings.ChallengeModeToggle;
+        volumeSlider.value = settings.Volume;
         ValidateToggle();
     }
 

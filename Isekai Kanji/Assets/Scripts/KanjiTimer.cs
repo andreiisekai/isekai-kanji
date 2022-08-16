@@ -5,9 +5,9 @@ using UnityEngine;
 public class KanjiTimer : MonoBehaviour
 {
     public GameManager gameManager;
+    public KanjiSettings settings;
     public float delay = 1.5f;
     private float nextKanjiTime = 0f;
-    public bool challengeMode;
 
     void Update()
     {
@@ -15,7 +15,7 @@ public class KanjiTimer : MonoBehaviour
         {
             gameManager.AddKanji();
             nextKanjiTime = Time.time + delay;
-            if (challengeMode)
+            if (settings.ChallengeModeToggle)
             {
                 delay *= .99f;
             }
