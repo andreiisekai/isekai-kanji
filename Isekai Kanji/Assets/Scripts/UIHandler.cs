@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class UIHandler : MonoBehaviour
 {
     [SerializeField] SceneLoader sceneLoader;
-    private GameObject mainMenu, options, helpCanvas;
+    private GameObject mainMenu, options, helpCanvas, kanjiCardCanvas;
     string activeSceneName;
 
 
@@ -20,9 +20,12 @@ public class UIHandler : MonoBehaviour
         mainMenu = GameObject.Find("MainMenuCanvas");
         options = GameObject.Find("OptionsCanvas");
         helpCanvas = GameObject.Find("HelpCanvas");
+        kanjiCardCanvas = GameObject.Find("KanjiCardCanvas");
         Debug.Log("mainMenu = " + mainMenu);
         Debug.Log("options = " + options);
         Debug.Log("helpCanvas = " + helpCanvas);
+        Debug.Log("kanjiCardCanvas = " + kanjiCardCanvas);
+
         if (options != null)
         {
             options.SetActive(false);
@@ -31,6 +34,10 @@ public class UIHandler : MonoBehaviour
         if (helpCanvas != null)
         {
             helpCanvas.SetActive(false);
+        }
+        if (kanjiCardCanvas != null)
+        {
+            kanjiCardCanvas.SetActive(false);
         }
     }
 
@@ -48,18 +55,21 @@ public class UIHandler : MonoBehaviour
                     LoadMainMenu();
                     break;
                 case "MainMenu":
-                    if (options.activeSelf == true && helpCanvas.activeSelf == false)
+                    if (options.activeSelf == true)
                     {
                         ShowMainMenu();
                     }
-                    else if (options.activeSelf == false && helpCanvas.activeSelf == true)
+                    
+                    if (helpCanvas.activeSelf == true)
                     {
                         helpCanvas.SetActive(false);
                         ShowOptions();
                     }
-                    else
+
+                    if (kanjiCardCanvas.activeSelf == true)
                     {
-                        QuitGame();
+                        kanjiCardCanvas.SetActive(false);
+                        ShowHelpCanvas();
                     }
                     break;
                 default:
@@ -101,6 +111,12 @@ public class UIHandler : MonoBehaviour
     {
         options.SetActive(false);
         helpCanvas.SetActive(true);
+    }
+
+    public KanjiCard ShowKanjiCardCanvas()
+    {
+        kanjiCardCanvas.SetActive(true);
+        return kanjiCardCanvas.GetComponentInChildren<KanjiCard>();
     }
 
 }

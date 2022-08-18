@@ -57,14 +57,14 @@ public class HelpDisplay : MonoBehaviour
     {
         GameObject kanjiObject = Instantiate(kanjiElement, kanjiPosition, Quaternion.identity);
         kanjiObject.transform.SetParent(gameObject.transform, false);
-        string kanjiReading = kanaParser.Parse(kanji.Onyomi[0]);
-        SetText(kanjiObject, kanji.Symbol, kanjiReading);
+        SetText(kanjiObject, kanji);
     }
 
-    private void SetText(GameObject kanjiObject, string kanjiSymbol, string kanjiReading)
+    private void SetText(GameObject kanjiObject, Kanji kanji)
     {
-        kanjiObject.GetComponentInChildrenByName<TextMeshProUGUI>("Symbol").text = kanjiSymbol;
-        kanjiObject.GetComponentInChildrenByName<TextMeshProUGUI>("Reading").text = kanjiReading;
+        kanjiObject.GetComponentInChildrenByName<TextMeshProUGUI>("Symbol").text = kanji.Symbol;
+        kanjiObject.GetComponentInChildrenByName<TextMeshProUGUI>("Reading").text = kanaParser.Parse(kanji.Onyomi[0]);
+        kanjiObject.GetComponentInChildren<KanjiElement>().Kanji = kanji;
     }
 
     private void DestroyChildren()

@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: onna, me
+  m_text: hito(tsu)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -201,7 +201,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u304A\u3093\u306A, \u3081"
+  m_text: "\u3072\u3068(\u3064)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 77b76f8f60459514d92ea0b24bed796b, type: 2}
   m_sharedMaterial: {fileID: -908915045338573763, guid: 77b76f8f60459514d92ea0b24bed796b, type: 2}
@@ -748,11 +748,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c225d0435476f394da77c6b003595c69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  kanjiSymbol: {fileID: 8650657936178477365}
   onyomiRomaji: {fileID: 8650657936104391098}
   onyomiKana: {fileID: 8650657936521374495}
   kunyomiRomaji: {fileID: 8650657934859017342}
   kunyomiKana: {fileID: 8650657934919362705}
   meaning: {fileID: 8650657936566578166}
+  jlptn5: {fileID: 11400000, guid: bea68f8cdee2dc04dace79e6402e4102, type: 2}
 --- !u!1 &8650657936104391096
 GameObject:
   m_ObjectHideFlags: 0
@@ -819,9 +821,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'jo
-
-'
+  m_text: ichi
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -956,7 +956,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u5973\n"
+  m_text: "\u4E00"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 77b76f8f60459514d92ea0b24bed796b, type: 2}
   m_sharedMaterial: {fileID: -908915045338573763, guid: 77b76f8f60459514d92ea0b24bed796b, type: 2}
@@ -1170,7 +1170,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u30B8\u30E7"
+  m_text: "\u30A4\u30C1"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 77b76f8f60459514d92ea0b24bed796b, type: 2}
   m_sharedMaterial: {fileID: -908915045338573763, guid: 77b76f8f60459514d92ea0b24bed796b, type: 2}
@@ -1305,7 +1305,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: woman, female
+  m_text: one
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

@@ -5,16 +5,17 @@ using UnityEngine;
 
 public class KanjiCard : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI onyomiRomaji, onyomiKana, kunyomiRomaji, kunyomiKana, meaning;
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] TextMeshProUGUI kanjiSymbol, onyomiRomaji, onyomiKana, kunyomiRomaji, kunyomiKana, meaning;
+    [SerializeField] JLPT jlptn5;
+    
+    public void FillKanjiCard(Kanji kanji)
     {
-        
+        kanjiSymbol.text = kanji.Symbol;
+        onyomiRomaji.text = string.Join(", ", kanji.Onyomi);
+        onyomiKana.text = string.Join(", ", kanji.Onyomi);
+        kunyomiRomaji.text = string.Join(", ", kanji.Kunyomi);
+        kunyomiKana.text = string.Join(", ", kanji.Kunyomi);
+        meaning.text = string.Join(", ", kanji.Meaning);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
