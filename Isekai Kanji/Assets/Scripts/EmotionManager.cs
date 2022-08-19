@@ -15,7 +15,7 @@ public class EmotionManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (meshRenderer.material != materials[scoreManager.Lives -1 ])
+        if (scoreManager.Lives > 0 && meshRenderer.material != materials[scoreManager.Lives -1 ])
         {
             meshRenderer.material = materials[scoreManager.Lives - 1];
         }

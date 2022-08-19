@@ -705,6 +705,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8650657935977276018}
   - component: {fileID: 1722269368272809213}
+  - component: {fileID: 3076309703943061410}
   m_Layer: 5
   m_Name: KanjiCard
   m_TagString: Untagged
@@ -755,6 +756,20 @@ MonoBehaviour:
   kunyomiKana: {fileID: 8650657934919362705}
   meaning: {fileID: 8650657936566578166}
   jlptn5: {fileID: 11400000, guid: bea68f8cdee2dc04dace79e6402e4102, type: 2}
+--- !u!114 &3076309703943061410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8650657935977276017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eced661d60eb5f478459f4e0ebaf8c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hiragana: {fileID: 11400000, guid: 5b9b1b86e42b86c48acfe513cc22dc73, type: 2}
+  katakana: {fileID: 11400000, guid: 8ebb4f2fbbc289a40ab62cadf670a7f9, type: 2}
 --- !u!1 &8650657936104391096
 GameObject:
   m_ObjectHideFlags: 0

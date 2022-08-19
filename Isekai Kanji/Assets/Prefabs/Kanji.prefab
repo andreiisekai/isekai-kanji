@@ -71,6 +71,7 @@ MonoBehaviour:
   jlptn5: {fileID: 11400000, guid: bea68f8cdee2dc04dace79e6402e4102, type: 2}
   hiragana: {fileID: 11400000, guid: 5b9b1b86e42b86c48acfe513cc22dc73, type: 2}
   katakana: {fileID: 11400000, guid: 8ebb4f2fbbc289a40ab62cadf670a7f9, type: 2}
+  settings: {fileID: 11400000, guid: b134adacc1b9be74a9d8aa003dc12b65, type: 2}
 --- !u!114 &6575111654443707329
 MonoBehaviour:
   m_ObjectHideFlags: 0
